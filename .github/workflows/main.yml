@@ -1,0 +1,17 @@
+name: Hello World CI
+
+on:
+  push:
+    branches:
+      - main  # 'main'ブランチに変更がプッシュされたときに実行
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest  # 使用するOS（Ubuntuの最新バージョン）
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2  # リポジトリのコードをチェックアウト
+
+    - name: Say Hello
+      run: echo "Hello, World!"  # コンソールに「Hello, World!」を出力
