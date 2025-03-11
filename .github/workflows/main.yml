@@ -3,7 +3,7 @@ name: Hello World CI
 on:
   push:
     branches:
-      - main  # 'main'ブランチに変更がプッシュされたときに実行
+      - master  # 'master'ブランチに変更がプッシュされたときに実行
 
 jobs:
   hello-world:
